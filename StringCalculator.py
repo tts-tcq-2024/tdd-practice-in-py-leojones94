@@ -1,3 +1,3 @@
 def add(x):
-  if x==None:
+  if x=="":
     return 0
