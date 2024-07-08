@@ -1,6 +1,3 @@
-def add(x,y):
-  if x==None or y==None:
-    return 0
-  
-  if x=="" or y=="":
+def add(x):
+  if x==None:
     return 0
