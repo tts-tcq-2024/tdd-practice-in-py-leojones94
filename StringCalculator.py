@@ -1,9 +1,5 @@
 def add(x):
   if x=="" or x=="0":
     return 0
-  else:
-    a = x.split(",")
-    sum = 0
-    for i in a:
-      sum += int(i)
-    return sum
+  a = x.split(",")
+  return int(a[0]) + int(a[1])
