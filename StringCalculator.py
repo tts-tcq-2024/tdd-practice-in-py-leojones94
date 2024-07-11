@@ -1,7 +1,7 @@
 def numb_add(a):
   sum = 0
   for i in a:
-    if int(i) < 1000:
+    if int(i) <= 1000:
       sum+=int(i)
   return sum
 
@@ -17,7 +17,6 @@ def numbcheck(a):
     if int(i)<0:
       neg+=(i+" ")
   return(negaterror(neg,a))
-  
 
 def newline(x):
   b = x.split("\n")
