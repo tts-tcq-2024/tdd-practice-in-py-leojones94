@@ -10,7 +10,7 @@ def newline(x):
   b = x.split("\n")
   for j in b:
     if "," in j:
-      a.append([p for p in (j.split(","))])
+      a.append(j.split(","))
     elif "," not in j:
       a.append([j])
   return sum(a,[])
