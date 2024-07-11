@@ -13,6 +13,9 @@ class TestStringCalculator(unittest.TestCase):
                 
         def test_ignoreNumbersGreaterThan1000(self):
                 self.assertEqual(add("1,1001"), 1)
+
+        def test_ignoreNumbersGreaterThan1000(self):
+                self.assertEqual(add("1,1000"), 1001)
                 
         def test_expectSumWithCustomDelimiter(self):
                 self.assertEqual(add("//;\n1;2"), 3)
