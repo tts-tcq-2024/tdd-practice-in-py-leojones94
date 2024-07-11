@@ -7,7 +7,8 @@ def two_numb_add(a):
 
 def delimit(x):
   if x[:2] == "\\":
-    a = x.split(x[3])
+    a = x.split(x[2])
+    print(a)
     return a[5:]
   a = x.split(",")
   return a
