@@ -6,14 +6,12 @@ def numb_add(a):
   return sum
 
 def newline(x):
-  a=[]
   b = x.split("\n")
   for j in b:
     if "," in j:
-      a.append(j.split(","))
-    elif "," not in j:
-      a.append([j])
-  return sum(a,[])
+      b.extend(j.split(","))
+      b.remove(j)
+  return (b)
 
 def delimit(x):
   if x[:2] == "//":
