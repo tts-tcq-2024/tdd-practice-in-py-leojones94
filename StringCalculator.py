@@ -5,6 +5,16 @@ def numb_add(a):
       sum+=int(i)
   return sum
 
+def numbcheck(a):
+  neg=""
+  for i in a:
+    if int(i)<0:
+      neg+=i
+  if len(neg)>1:
+    NegError=ValueError("negatives not allowed " + neg)
+    raise NegError
+  return a
+
 def newline(x):
   b = x.split("\n")
   for j in b:
@@ -19,12 +29,12 @@ def delimit(x):
     return a
   return (newline(x))
   
-  
 def add(x):
   if x=="" or x=="0":
     return 0
   a = delimit(x)
+  a = numbcheck(a)
   sum = numb_add(a)
   return sum
 
-print(add("1\n2,3"))
+# print(add("-1\n2,3"))
