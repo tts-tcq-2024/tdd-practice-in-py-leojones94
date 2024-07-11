@@ -1,8 +1,8 @@
 def two_numb_add(a):
   sum = 0
   for i in a:
-    if i < 1000:
-      sum+=i
+    if int(i) < 1000:
+      sum+=int(i)
   return sum
 
 def delimit(x):
