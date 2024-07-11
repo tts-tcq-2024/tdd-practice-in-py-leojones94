@@ -22,6 +22,10 @@ class TestStringCalculator(unittest.TestCase):
 
         def test_expectErrorWithNegatives(self):
                 self.assertEqual(add("-1\n2,3"),"negatives not allowed -1");
+
+        def test_expectErrorWithNegatives(self):
+                with self.assertRaisesRegex(ValueError, 'negatives not allowed -1'):
+                       add("-1\n2,3")
         
 
 
